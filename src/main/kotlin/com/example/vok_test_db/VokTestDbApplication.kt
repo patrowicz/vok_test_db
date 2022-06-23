@@ -8,7 +8,7 @@ import org.springframework.boot.runApplication
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 @SpringBootApplication
-@Theme(themeClass = Lumo::class, variant = Lumo.DARK)
+@Theme(themeClass = Lumo::class, variant = Lumo.LIGHT)
 class VokTestDbApplication: SpringBootServletInitializer(), AppShellConfigurator
 
 fun main(args: Array<String>) {
