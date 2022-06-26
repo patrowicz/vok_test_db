@@ -1,6 +1,7 @@
 package com.example.vok_test_db
 
 import com.vaadin.flow.component.page.AppShellConfigurator
+import com.vaadin.flow.component.page.Push
 import com.vaadin.flow.theme.Theme
 import com.vaadin.flow.theme.lumo.Lumo
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -9,6 +10,8 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 @SpringBootApplication
 @Theme(themeClass = Lumo::class, variant = Lumo.LIGHT)
+//wymagane dla reakcji na wzbudzenie koprocedury
+@Push
 class VokTestDbApplication: SpringBootServletInitializer(), AppShellConfigurator
 
 fun main(args: Array<String>) {
